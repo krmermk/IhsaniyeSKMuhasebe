@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IhsaniyeSKMuhasebe.WinUI", "IhsaniyeSKMuhasebe.WinUI\IhsaniyeSKMuhasebe.WinUI.csproj", "{84AFD5B7-3DFC-4579-863A-3B209893E6E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IhsaniyeSKMuhasebe.Entity", "IhsaniyeSKMuhasebe.Entity\IhsaniyeSKMuhasebe.Entity.csproj", "{6AC9888A-0B01-4D48-8DC3-E5B7BBBDD32E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IhsaniyeSKMuhasebe.DAL", "IhsaniyeSKMuhasebe.DAL\IhsaniyeSKMuhasebe.DAL.csproj", "{C0C00A5B-F33D-4557-99F5-D55E2033F268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IhsaniyeSKMuhasebe.BLL", "IhsaniyeSKMuhasebe.BLL\IhsaniyeSKMuhasebe.BLL.csproj", "{FC0656F9-6A28-4937-AB20-712C5927347F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IhsaniyeSKMuhasebe.DTO", "IhsaniyeSKMuhasebe.DTO\IhsaniyeSKMuhasebe.DTO.csproj", "{D19E260D-9CA2-4FAE-8AA1-0C4EF6A6081A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IhsaniyeSKMuhasebe.Extension", "IhsaniyeSKMuhasebe.Extension\IhsaniyeSKMuhasebe.Extension.csproj", "{D923ECE2-CFA6-4DDB-85A5-D0D225C530BF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://kisaweozprojects.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = IhsaniyeSKMuhasebe.WinUI\\IhsaniyeSKMuhasebe.WinUI.csproj
+		SccProjectName1 = IhsaniyeSKMuhasebe.WinUI
+		SccLocalPath1 = IhsaniyeSKMuhasebe.WinUI
+		SccProjectUniqueName2 = IhsaniyeSKMuhasebe.Entity\\IhsaniyeSKMuhasebe.Entity.csproj
+		SccProjectName2 = IhsaniyeSKMuhasebe.Entity
+		SccLocalPath2 = IhsaniyeSKMuhasebe.Entity
+		SccProjectUniqueName3 = IhsaniyeSKMuhasebe.DAL\\IhsaniyeSKMuhasebe.DAL.csproj
+		SccProjectName3 = IhsaniyeSKMuhasebe.DAL
+		SccLocalPath3 = IhsaniyeSKMuhasebe.DAL
+		SccProjectUniqueName4 = IhsaniyeSKMuhasebe.BLL\\IhsaniyeSKMuhasebe.BLL.csproj
+		SccProjectName4 = IhsaniyeSKMuhasebe.BLL
+		SccLocalPath4 = IhsaniyeSKMuhasebe.BLL
+		SccProjectUniqueName5 = IhsaniyeSKMuhasebe.DTO\\IhsaniyeSKMuhasebe.DTO.csproj
+		SccProjectName5 = IhsaniyeSKMuhasebe.DTO
+		SccLocalPath5 = IhsaniyeSKMuhasebe.DTO
+		SccProjectUniqueName6 = IhsaniyeSKMuhasebe.Extension\\IhsaniyeSKMuhasebe.Extension.csproj
+		SccProjectName6 = IhsaniyeSKMuhasebe.Extension
+		SccLocalPath6 = IhsaniyeSKMuhasebe.Extension
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84AFD5B7-3DFC-4579-863A-3B209893E6E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84AFD5B7-3DFC-4579-863A-3B209893E6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84AFD5B7-3DFC-4579-863A-3B209893E6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84AFD5B7-3DFC-4579-863A-3B209893E6E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC9888A-0B01-4D48-8DC3-E5B7BBBDD32E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC9888A-0B01-4D48-8DC3-E5B7BBBDD32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC9888A-0B01-4D48-8DC3-E5B7BBBDD32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC9888A-0B01-4D48-8DC3-E5B7BBBDD32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0C00A5B-F33D-4557-99F5-D55E2033F268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C00A5B-F33D-4557-99F5-D55E2033F268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C00A5B-F33D-4557-99F5-D55E2033F268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C00A5B-F33D-4557-99F5-D55E2033F268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC0656F9-6A28-4937-AB20-712C5927347F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC0656F9-6A28-4937-AB20-712C5927347F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC0656F9-6A28-4937-AB20-712C5927347F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC0656F9-6A28-4937-AB20-712C5927347F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D19E260D-9CA2-4FAE-8AA1-0C4EF6A6081A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19E260D-9CA2-4FAE-8AA1-0C4EF6A6081A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19E260D-9CA2-4FAE-8AA1-0C4EF6A6081A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19E260D-9CA2-4FAE-8AA1-0C4EF6A6081A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D923ECE2-CFA6-4DDB-85A5-D0D225C530BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D923ECE2-CFA6-4DDB-85A5-D0D225C530BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D923ECE2-CFA6-4DDB-85A5-D0D225C530BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D923ECE2-CFA6-4DDB-85A5-D0D225C530BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

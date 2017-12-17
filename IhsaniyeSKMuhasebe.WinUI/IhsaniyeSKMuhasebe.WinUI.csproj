@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84AFD5B7-3DFC-4579-863A-3B209893E6E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IhsaniyeSKMuhasebe.WinUI</RootNamespace>
+    <AssemblyName>IhsaniyeSKMuhasebe.WinUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EkleMenu\FormIseGirisCikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkleMenu\FormIseGirisCikis.Designer.cs">
+      <DependentUpon>FormIseGirisCikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkleMenu\FormKullaniciTanimla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkleMenu\FormKullaniciTanimla.Designer.cs">
+      <DependentUpon>FormKullaniciTanimla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkleMenu\FormSirketBireyEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkleMenu\FormSirketBireyEkle.Designer.cs">
+      <DependentUpon>FormSirketBireyEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkleMenu\FormUyeTanimla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkleMenu\FormUyeTanimla.Designer.cs">
+      <DependentUpon>FormUyeTanimla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkleMenu\FormPersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkleMenu\FormPersonelEkle.Designer.cs">
+      <DependentUpon>FormPersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoruntuleMenu\FormPersonelGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoruntuleMenu\FormPersonelGoruntule.Designer.cs">
+      <DependentUpon>FormPersonelGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoruntuleMenu\FormSirketBireyGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoruntuleMenu\FormSirketBireyGoruntule.Designer.cs">
+      <DependentUpon>FormSirketBireyGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoruntuleMenu\FormUyeGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoruntuleMenu\FormUyeGoruntule.Designer.cs">
+      <DependentUpon>FormUyeGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasaIslemMenu\FormGelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasaIslemMenu\FormGelirGider.Designer.cs">
+      <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarMenu\FormGelirGiderRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarMenu\FormGelirGiderRapor.Designer.cs">
+      <DependentUpon>FormGelirGiderRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormBankaEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormBankaEkleSil.Designer.cs">
+      <DependentUpon>FormBankaEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormDepartmanEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormDepartmanEkleSil.Designer.cs">
+      <DependentUpon>FormDepartmanEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormHesapIslemEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormHesapIslemEkleSil.Designer.cs">
+      <DependentUpon>FormHesapIslemEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormOdemeTurEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormOdemeTurEkleSil.Designer.cs">
+      <DependentUpon>FormOdemeTurEkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormUnvanEkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TanimlarMenu\FormUnvanEkleSil.Designer.cs">
+      <DependentUpon>FormUnvanEkleSil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EkleMenu\FormKullaniciTanimla.resx">
+      <DependentUpon>FormKullaniciTanimla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkleMenu\FormSirketBireyEkle.resx">
+      <DependentUpon>FormSirketBireyEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkleMenu\FormUyeTanimla.resx">
+      <DependentUpon>FormUyeTanimla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkleMenu\FormPersonelEkle.resx">
+      <DependentUpon>FormPersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoruntuleMenu\FormPersonelGoruntule.resx">
+      <DependentUpon>FormPersonelGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoruntuleMenu\FormSirketBireyGoruntule.resx">
+      <DependentUpon>FormSirketBireyGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoruntuleMenu\FormUyeGoruntule.resx">
+      <DependentUpon>FormUyeGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasaIslemMenu\FormGelirGider.resx">
+      <DependentUpon>FormGelirGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarMenu\FormGelirGiderRapor.resx">
+      <DependentUpon>FormGelirGiderRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarMenu\Report4.rdlc" />
+    <EmbeddedResource Include="TanimlarMenu\FormBankaEkleSil.resx">
+      <DependentUpon>FormBankaEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarMenu\FormDepartmanEkleSil.resx">
+      <DependentUpon>FormDepartmanEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarMenu\FormHesapIslemEkleSil.resx">
+      <DependentUpon>FormHesapIslemEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarMenu\FormOdemeTurEkleSil.resx">
+      <DependentUpon>FormOdemeTurEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TanimlarMenu\FormUnvanEkleSil.resx">
+      <DependentUpon>FormUnvanEkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="IhsaniyeSKMuhasebe.DTO.DTO.KasaIslemRaporDTO.datasource" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IhsaniyeSKMuhasebe.BLL\IhsaniyeSKMuhasebe.BLL.csproj">
+      <Project>{fc0656f9-6a28-4937-ab20-712c5927347f}</Project>
+      <Name>IhsaniyeSKMuhasebe.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhsaniyeSKMuhasebe.DTO\IhsaniyeSKMuhasebe.DTO.csproj">
+      <Project>{d19e260d-9ca2-4fae-8aa1-0c4ef6a6081a}</Project>
+      <Name>IhsaniyeSKMuhasebe.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhsaniyeSKMuhasebe.Entity\IhsaniyeSKMuhasebe.Entity.csproj">
+      <Project>{6ac9888a-0b01-4d48-8dc3-e5b7bbbdd32e}</Project>
+      <Name>IhsaniyeSKMuhasebe.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhsaniyeSKMuhasebe.Extension\IhsaniyeSKMuhasebe.Extension.csproj">
+      <Project>{d923ece2-cfa6-4ddb-85a5-d0d225c530bf}</Project>
+      <Name>IhsaniyeSKMuhasebe.Extension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bayrak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbackfoto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-padlock-symbol-for-protect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

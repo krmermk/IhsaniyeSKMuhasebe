@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC0656F9-6A28-4937-AB20-712C5927347F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IhsaniyeSKMuhasebe.BLL</RootNamespace>
+    <AssemblyName>IhsaniyeSKMuhasebe.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\BankaTanimController.cs" />
+    <Compile Include="Controller\CariUyeBankaController.cs" />
+    <Compile Include="Controller\CariUyeBilgileriController.cs" />
+    <Compile Include="Controller\CariUyeController.cs" />
+    <Compile Include="Controller\CariUyeDtoController.cs" />
+    <Compile Include="Controller\DepartmanController.cs" />
+    <Compile Include="Controller\HesapIslemTurController.cs" />
+    <Compile Include="Controller\KasaIslemController.cs" />
+    <Compile Include="Controller\KasaIslemDTOContoller.cs" />
+    <Compile Include="Controller\KasaIslemRaporDtoController.cs" />
+    <Compile Include="Controller\KullaniciController.cs" />
+    <Compile Include="Controller\KullaniciSifreController.cs" />
+    <Compile Include="Controller\LoginController.cs" />
+    <Compile Include="Controller\OdemeTurController.cs" />
+    <Compile Include="Controller\PersonelCariDtoController.cs" />
+    <Compile Include="Controller\PersonelController.cs" />
+    <Compile Include="Controller\PersonelGoruntuleDTOController.cs" />
+    <Compile Include="Controller\PersonelIseGirisCikisController.cs" />
+    <Compile Include="Controller\PersonelIsTanimController.cs" />
+    <Compile Include="Controller\PersonelUnvanDepartmanDtoController.cs" />
+    <Compile Include="Controller\UnvanController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IhsaniyeSKMuhasebe.DAL\IhsaniyeSKMuhasebe.DAL.csproj">
+      <Project>{c0c00a5b-f33d-4557-99f5-d55e2033f268}</Project>
+      <Name>IhsaniyeSKMuhasebe.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhsaniyeSKMuhasebe.DTO\IhsaniyeSKMuhasebe.DTO.csproj">
+      <Project>{d19e260d-9ca2-4fae-8aa1-0c4ef6a6081a}</Project>
+      <Name>IhsaniyeSKMuhasebe.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhsaniyeSKMuhasebe.Entity\IhsaniyeSKMuhasebe.Entity.csproj">
+      <Project>{6ac9888a-0b01-4d48-8dc3-e5b7bbbdd32e}</Project>
+      <Name>IhsaniyeSKMuhasebe.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IhsaniyeSKMuhasebe.Extension\IhsaniyeSKMuhasebe.Extension.csproj">
+      <Project>{d923ece2-cfa6-4ddb-85a5-d0d225c530bf}</Project>
+      <Name>IhsaniyeSKMuhasebe.Extension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
